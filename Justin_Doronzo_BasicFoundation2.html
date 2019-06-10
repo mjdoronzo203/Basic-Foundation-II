@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html>
+	<script type="text/javascript">
+
+		Challenge 1:
+
+		function replaceBigPos(x) {
+		  for (i=0; i<x.length; i++) {
+		    if(x[i] > 0) {
+			  x[i] = 'big';
+		    }
+		  }
+		  return x;
+		}
+		y = replaceBigPos([-2, 23, -30, 13, -8])
+		//console.log(y)
+
+
+
+		Challenge 2:
+
+		function pLoretHi(x) {
+		  max = x[0];
+		  min = x[0];
+		  for(i=0; i<x.length; i++) {
+		    if(x[i] > max) {
+		      max = x[i];
+		    }
+		    if(x[i] < min) {
+		      min = x[i]; 
+		    }
+		  }
+		  console.log(min)
+		  return max;
+		}
+		y = pLoretHi([21, -4, -35, 89, 13])
+		//console.log(y)
+
+
+
+		Challenge 3:
+
+		function pOneretAnother(x) {
+		  console.log(x[x.length - 2]);
+		  for(i=0; i<x.length; i++) {
+		    if (x[i] %2 != 0) {
+		      return x[i];
+		    }
+		  }
+		}
+		y = pOneretAnother([20, -4, 30, -35, 90, 13])
+		//console.log(y)
+
+
+
+		Challenge 4:
+
+		function doubleArrVal(x) {
+		  c = [];
+		  for(i=0; i<x.length; i++) {
+		    c[i] = x[i]*2;
+		  }
+		  return c;
+		}
+		y = doubleArrVal([11, -4, -50, 35, 32, 13])
+		//console.log(y)
+
+
+
+		Challenge 5:
+
+		function countPositives(x) {
+		  counter = 0;
+		  for(i=0; i<x.length; i++) {
+		    if(x[i] > 0) {
+		      counter++;
+		    }
+		  }
+		  x[x.length -1] = counter;
+		  return x;
+		}
+		y = countPositives([11, -4, -50, 35, 32, 13])
+		//console.log(y)
+
+
+
+		Challenge 6:
+
+		function evensOdds(x) {
+		  oddCounter = 0;
+		  evenCounter = 0;
+		  for(i=0; i<x.length; i++) {
+		    if(x[i] %2 != 0) {
+		      oddCounter++;
+		      if(oddCounter == 3) {
+		        console.log("That's odd!");
+		        oddCounter = 0;
+		      }
+		    }
+		    if(x[i] %2 == 0) {
+		      evenCounter++
+		      if(evenCounter == 3) {
+		        console.log('Even more so!');
+		        evenCounter = 0;
+		      }
+		    }
+		  }
+		}
+		evensOdds([20, -4, 30, 4, 2, 4, -35, 3, 1, 90, 13])
+
+
+
+		Challenge 7:
+
+		function pOneretAnother(arr) {
+		  for(i=0; i<arr.length; i++) {
+		    if (i %2 != 0) {
+		      arr[i] = arr[i] + 1;
+		    }
+		    console.log(arr[i]);
+		  }
+		  return arr;
+		}
+		y = pOneretAnother([-9, 34, 13, -6, 55, -8])
+		//console.log(y)
+
+
+
+		Challenge 8:
+
+		function prevLengths(x) {
+		  for(i=x.length-1; i>=1; i--) {
+		    j = i - 1;
+		    x[i] = x[j].length;
+		  }
+		  return x;
+		}
+		y = prevLengths(['Isaac', 'Doronzo', 'Amanda', 'Doronzo', 'Justin', 'Doronzo'])
+		//console.log(y)
+
+
+
+		Challenge 9:
+
+		function addSeven(x) {
+		  c = [];
+		  for(i=0; i<x.length; i++) {
+		    c[i] = x[i] +7;
+		  }
+		  return c;
+		}
+		y = addSeven([7, -35, 32, 1 ,-4, 93])
+		//console.log(y)
+		
+
+
+		Challenge 10:
+
+		function reverseArr(x) {
+		  if(x.length %2 ==0) {
+		    for(i=0; i<=(x.length-1)/2; i++) {
+		      j = x[i];
+		      x[i] = x[x.length - 1 - i];
+		      x[x.length - 1 - i] = j;
+		    }
+		  }
+		  else for(i=0; i<=x.length/2; i++) {
+		      j = x[i];
+		      x[i] = x[x.length - 1 - i];
+		      x[x.length - 1 - i] = j;
+		  }
+		  return x;   
+		}
+		y = reverseArr([13, 23, 34, 45, 56, 68])
+		//console.log(y)
+
+
+
+		Challenge 11:
+
+		function negOutlook(x) {
+		  c = [];
+		  for(i=0; i<x.length; i++) {
+		    if(x[i] > 0) {
+		      c[i] = x[i] - (x[i]*2);
+		    }
+		    else c[i] = x[i];
+		  }
+		  return c;
+		}
+		y = negOutlook([7, 18, -9, -30, 56])
+		//console.log(y)
+
+
+
+		Challenge 12:
+
+		function satiate(x) {
+		  counter = 0;
+		  for(i=0; i<x.length; i++) {
+		    if(x[i] == 'food') {
+		      console.log('yummy');
+		      counter++;
+		    }
+		  }
+		  if(counter == 0) {
+		      console.log("I'm hungry");
+		  }
+		}
+		//y = satiate(['rock', 'food', 'chair', 'food', 'food', 'car'])
+		//z = satiate(['rock', 'starve', 'water', 'phone'])
+
+
+
+		Challenge 13:
+
+		function swapTowardCenter(x) {
+		  if(x.length %2 ==0) {
+		    for(i=0; i<=(x.length-1)/2; i+=2) {
+		      j = x[i];
+		      x[i] = x[x.length - 1 - i];
+		      x[x.length - 1 - i] = j;
+		    }
+		  }
+		  else for(i=0; i<=x.length/2; i+=2) {
+		      j = x[i];
+		      x[i] = x[x.length - 1 - i];
+		      x[x.length - 1 - i] = j;
+		  }
+		  console.log(x);   
+		}
+		//swapTowardCenter([13, 23, 34, 45, 56, 68, 27, 43, 1])
+
+
+		
+		Challenge 14:
+
+		function scaleArr(arr, num) {
+		  for(i=0; i<arr.length; i++) {
+		    arr[i] = arr[i]*num;
+		  }
+		  return arr;
+		}
+		y = scaleArr([1, 5, 8, 12], 5)
+		//console.log(y)
+
+
+	</script>
+</html>
